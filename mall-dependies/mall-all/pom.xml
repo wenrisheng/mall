@@ -14,6 +14,7 @@
   	</dependency>
   </dependencies>
   <modules>
+    	<module>mall-module-user</module>
   	<module>mall-module-foreground</module>
   </modules>
 </project>

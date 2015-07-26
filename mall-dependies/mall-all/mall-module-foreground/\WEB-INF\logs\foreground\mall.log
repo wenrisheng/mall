@@ -1,0 +1,739 @@
+2015-07-26 14:24:37.368  INFO 46983 --- [main] com.wl.mall.Application                  : Starting Application on wenrishengdeMacBook-Pro.local with PID 46983 (/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground/target/classes started by wrs in /Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground)
+2015-07-26 14:24:37.658  INFO 46983 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:24:37 CST 2015]; root of context hierarchy
+2015-07-26 14:24:43.915  INFO 46983 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$23e82216] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:24:44.068  INFO 46983 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:24:44.112  INFO 46983 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:24:44.125  INFO 46983 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:24:45.619  INFO 46983 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-07-26 14:24:46.831  INFO 46983 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-07-26 14:24:46.834  INFO 46983 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2015-07-26 14:24:48.352  INFO 46983 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2015-07-26 14:24:48.378  INFO 46983 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-07-26 14:24:48.380  INFO 46983 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10726 ms
+2015-07-26 14:24:49.050  INFO 46983 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-07-26 14:24:49.060  INFO 46983 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-07-26 14:24:49.886  INFO 46983 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-07-26 14:24:49.924  INFO 46983 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-07-26 14:24:50.418  INFO 46983 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.6.Final}
+2015-07-26 14:24:50.425  INFO 46983 --- [main] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.jdbc.batch_versioned_data=true, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.cache.region_prefix=hibernate.test, hibernate.show_sql=true, hibernate.proxool.pool_alias=pool1, hibernate.bytecode.use_reflection_optimizer=false, hibernate.generate_statistics=true, hibernate.hbm2ddl.auto=update, hibernate.jdbc.use_streams_for_binary=true, hibernate.max_fetch_depth=1, hibernate.connection.release_mode=auto, hibernate.format_sql=true, hibernate.connection.pool_size=1, current_session_context_class=thread, hibernate.autoReconnect=true, hibernate.cache.provider_class=org.hibernate.cache.HashtableCacheProvider, hibernate.use_sql_comments=true, hibernate.cglib.use_reflection_optimizer=true}
+2015-07-26 14:24:50.426  INFO 46983 --- [main] org.hibernate.cfg.Environment            : HHH000407: Using java.io streams to persist binary types
+2015-07-26 14:24:50.427  INFO 46983 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2015-07-26 14:24:51.527  INFO 46983 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-07-26 14:24:52.964  INFO 46983 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-07-26 14:24:52.988  INFO 46983 --- [main] o.h.e.jdbc.internal.LobCreatorBuilder    : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-07-26 14:24:53.470  INFO 46983 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2015-07-26 14:24:54.339  INFO 46983 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2015-07-26 14:24:54.340  INFO 46983 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2015-07-26 14:24:54.346  INFO 46983 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2015-07-26 14:24:54.402  INFO 46983 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: mall.user
+2015-07-26 14:24:54.402  INFO 46983 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [password, tel, id, account]
+2015-07-26 14:24:54.403  INFO 46983 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2015-07-26 14:24:54.405  INFO 46983 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2015-07-26 14:24:54.407  INFO 46983 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2015-07-26 14:24:55.406  INFO 46983 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:24:55.508  INFO 46983 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:24:56.599  INFO 46983 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home]}" onto java.lang.String com.wl.mall.controller.HomeController.home()
+2015-07-26 14:24:56.615  INFO 46983 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addUser]}" onto public java.lang.String com.wl.mall.controller.UserController.addUser(java.lang.String,java.lang.String)
+2015-07-26 14:24:56.628  INFO 46983 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-07-26 14:24:56.629  INFO 46983 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-07-26 14:24:56.802  INFO 46983 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2015-07-26 14:24:57.955  INFO 46983 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:24:37 CST 2015]; root of context hierarchy
+2015-07-26 14:24:59.884  INFO 46983 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-07-26 14:25:00.086 ERROR 46983 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:338)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:760)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:472)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:237)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:186)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:149)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.wl.mall.Application.main(Application.java:17)
+
+2015-07-26 14:25:00.088 ERROR 46983 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:237)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:186)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:149)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.wl.mall.Application.main(Application.java:17)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:338)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:760)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:472)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	... 13 common frames omitted
+
+2015-07-26 14:25:00.180  INFO 46983 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2015-07-26 14:25:00.277  INFO 46983 --- [main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground/target/classes/, file:/Users/wrs/Documents/workspace/mall/mall-dependies/mall-module-common/target/classes/, file:/Users/wrs/Documents/workspace/mall/mall-util/target/classes/, file:/Users/wrs/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/Users/wrs/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar, file:/Users/wrs/.m2/repository/taglibs/standard/1.1.2/standard-1.1.2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-file/1.0-beta-2/wagon-file-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-2/wagon-http-lightweight-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-http-shared/1.0-beta-2/wagon-http-shared-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/jtidy/jtidy/4aug2000r7-dev/jtidy-4aug2000r7-dev.jar, file:/Users/wrs/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-2/wagon-provider-api-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar, file:/Users/wrs/.m2/repository/commons-cli/commons-cli/1.0/commons-cli-1.0.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-ssh-external/1.0-beta-2/wagon-ssh-external-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-ssh-common/1.0-beta-2/wagon-ssh-common-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-ssh/1.0-beta-2/wagon-ssh-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/com/jcraft/jsch/0.1.27/jsch-0.1.27.jar, file:/Users/wrs/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar, file:/Users/wrs/.m2/repository/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar, file:/Users/wrs/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar, file:/Users/wrs/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.2.5.RELEASE/spring-boot-starter-web-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.5.RELEASE/spring-boot-starter-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot/1.2.5.RELEASE/spring-boot-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.5.RELEASE/spring-boot-autoconfigure-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.2.5.RELEASE/spring-boot-starter-logging-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar, file:/Users/wrs/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.12/log4j-over-slf4j-1.7.12.jar, file:/Users/wrs/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar, file:/Users/wrs/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar, file:/Users/wrs/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar, file:/Users/wrs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.6/jackson-databind-2.4.6.jar, file:/Users/wrs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.6/jackson-annotations-2.4.6.jar, file:/Users/wrs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.6/jackson-core-2.4.6.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar, file:/Users/wrs/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/Users/wrs/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-core/4.1.7.RELEASE/spring-core-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-aop/4.1.7.RELEASE/spring-aop-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-expression/4.1.7.RELEASE/spring-expression-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.2.5.RELEASE/spring-boot-starter-data-jpa-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.2.5.RELEASE/spring-boot-starter-aop-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/aspectj/aspectjrt/1.8.6/aspectjrt-1.8.6.jar, file:/Users/wrs/.m2/repository/org/aspectj/aspectjweaver/1.8.6/aspectjweaver-1.8.6.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.2.5.RELEASE/spring-boot-starter-jdbc-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.0.23/tomcat-jdbc-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/tomcat-juli/8.0.23/tomcat-juli-8.0.23.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-tx/4.1.7.RELEASE/spring-tx-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.10.Final/hibernate-entitymanager-4.3.10.Final.jar, file:/Users/wrs/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, file:/Users/wrs/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar, file:/Users/wrs/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar, file:/Users/wrs/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar, file:/Users/wrs/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-orm/4.1.7.RELEASE/spring-orm-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/data/spring-data-jpa/1.7.3.RELEASE/spring-data-jpa-1.7.3.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/data/spring-data-commons/1.9.3.RELEASE/spring-data-commons-1.9.3.RELEASE.jar, file:/Users/wrs/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-aspects/4.1.7.RELEASE/spring-aspects-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.5.RELEASE/spring-boot-starter-tomcat-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.23/tomcat-embed-core-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.23/tomcat-embed-el-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.23/tomcat-embed-logging-juli-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.23/tomcat-embed-websocket-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-jasper/8.0.23/tomcat-embed-jasper-8.0.23.jar, file:/Users/wrs/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.2.5.RELEASE/spring-boot-starter-test-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, file:/Users/wrs/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar, file:/Users/wrs/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-test/4.1.7.RELEASE/spring-test-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/com/mchange/c3p0/0.9.2.1/c3p0-0.9.2.1.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-c3p0/4.3.6.Final/hibernate-c3p0-4.3.6.Final.jar, file:/Users/wrs/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar, file:/Users/wrs/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar, file:/Users/wrs/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar, file:/Users/wrs/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, file:/Users/wrs/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar, file:/Users/wrs/.m2/repository/com/mchange/mchange-commons-java/0.2.3.4/mchange-commons-java-0.2.3.4.jar, file:/Users/wrs/.m2/repository/net/sf/ehcache/ehcache-core/2.4.3/ehcache-core-2.4.3.jar, file:/Users/wrs/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-ehcache/4.3.10.Final/hibernate-ehcache-4.3.10.Final.jar, file:/Users/wrs/.m2/repository/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar]
+2015-07-26 14:25:00.278  INFO 46983 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2015-07-26 14:25:00.278 ERROR 46983 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Tomcat connector in failed state
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:157)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.wl.mall.Application.main(Application.java:17)
+
+2015-07-26 14:25:00.278  INFO 46983 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:24:37 CST 2015]; root of context hierarchy
+2015-07-26 14:25:00.282  INFO 46983 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2015-07-26 14:25:00.291  INFO 46983 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2015-07-26 14:25:34.520  INFO 46987 --- [main] com.wl.mall.Application                  : Starting Application on wenrishengdeMacBook-Pro.local with PID 46987 (/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground/target/classes started by wrs in /Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground)
+2015-07-26 14:25:34.731  INFO 46987 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:25:34 CST 2015]; root of context hierarchy
+2015-07-26 14:25:41.579  INFO 46987 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$23e82216] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:25:41.706  INFO 46987 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:25:41.730  INFO 46987 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:25:41.742  INFO 46987 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:25:43.586  INFO 46987 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-07-26 14:25:44.046  INFO 46987 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-07-26 14:25:44.049  INFO 46987 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2015-07-26 14:25:46.311  INFO 46987 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2015-07-26 14:25:46.334  INFO 46987 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-07-26 14:25:46.336  INFO 46987 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11607 ms
+2015-07-26 14:25:47.352  INFO 46987 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-07-26 14:25:47.375  INFO 46987 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-07-26 14:25:47.778  INFO 46987 --- [localhost-startStop-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [212] milliseconds.
+2015-07-26 14:25:49.391  INFO 46987 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-07-26 14:25:49.415  INFO 46987 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-07-26 14:25:49.950  INFO 46987 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.6.Final}
+2015-07-26 14:25:49.960  INFO 46987 --- [main] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.jdbc.batch_versioned_data=true, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.cache.region_prefix=hibernate.test, hibernate.show_sql=true, hibernate.proxool.pool_alias=pool1, hibernate.bytecode.use_reflection_optimizer=false, hibernate.generate_statistics=true, hibernate.hbm2ddl.auto=update, hibernate.jdbc.use_streams_for_binary=true, hibernate.max_fetch_depth=1, hibernate.connection.release_mode=auto, hibernate.format_sql=true, hibernate.connection.pool_size=1, current_session_context_class=thread, hibernate.autoReconnect=true, hibernate.cache.provider_class=org.hibernate.cache.HashtableCacheProvider, hibernate.use_sql_comments=true, hibernate.cglib.use_reflection_optimizer=true}
+2015-07-26 14:25:49.961  INFO 46987 --- [main] org.hibernate.cfg.Environment            : HHH000407: Using java.io streams to persist binary types
+2015-07-26 14:25:49.964  INFO 46987 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2015-07-26 14:25:51.454  INFO 46987 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-07-26 14:25:52.913  INFO 46987 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-07-26 14:25:53.011  INFO 46987 --- [main] o.h.e.jdbc.internal.LobCreatorBuilder    : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-07-26 14:25:53.779  INFO 46987 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2015-07-26 14:25:55.545  INFO 46987 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2015-07-26 14:25:55.546  INFO 46987 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2015-07-26 14:25:55.552  INFO 46987 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2015-07-26 14:25:55.646  INFO 46987 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: mall.user
+2015-07-26 14:25:55.649  INFO 46987 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [password, tel, id, account]
+2015-07-26 14:25:55.650  INFO 46987 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2015-07-26 14:25:55.665  INFO 46987 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2015-07-26 14:25:55.667  INFO 46987 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2015-07-26 14:25:57.066  INFO 46987 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:25:57.183  INFO 46987 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:25:58.234  INFO 46987 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home]}" onto java.lang.String com.wl.mall.controller.HomeController.home()
+2015-07-26 14:25:58.236  INFO 46987 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addUser]}" onto public java.lang.String com.wl.mall.controller.UserController.addUser(java.lang.String,java.lang.String)
+2015-07-26 14:25:58.331  INFO 46987 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-07-26 14:25:58.332  INFO 46987 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-07-26 14:25:58.572  INFO 46987 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2015-07-26 14:25:59.951  INFO 46987 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:25:34 CST 2015]; root of context hierarchy
+2015-07-26 14:26:01.406  INFO 46987 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-07-26 14:26:01.606  INFO 46987 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2015-07-26 14:26:01.631  INFO 46987 --- [main] com.wl.mall.Application                  : Started Application in 28.543 seconds (JVM running for 30.47)
+2015-07-26 14:39:37.757  INFO 46990 --- [main] com.wl.mall.Application                  : Starting Application on wenrishengdeMacBook-Pro.local with PID 46990 (/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground/target/classes started by wrs in /Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground)
+2015-07-26 14:39:38.130  INFO 46990 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:39:38 CST 2015]; root of context hierarchy
+2015-07-26 14:39:44.416  INFO 46990 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cdbd9789] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:39:44.498  INFO 46990 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:39:44.600  INFO 46990 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:39:44.643  INFO 46990 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:39:46.530  INFO 46990 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-07-26 14:39:47.669  INFO 46990 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-07-26 14:39:47.678  INFO 46990 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2015-07-26 14:39:49.930  INFO 46990 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2015-07-26 14:39:49.937  INFO 46990 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-07-26 14:39:49.937  INFO 46990 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11825 ms
+2015-07-26 14:39:50.741  INFO 46990 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-07-26 14:39:50.758  INFO 46990 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-07-26 14:39:51.842  INFO 46990 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-07-26 14:39:51.921  INFO 46990 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-07-26 14:39:52.610  INFO 46990 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.6.Final}
+2015-07-26 14:39:52.622  INFO 46990 --- [main] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.jdbc.batch_versioned_data=true, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.cache.region_prefix=hibernate.test, hibernate.show_sql=true, hibernate.proxool.pool_alias=pool1, hibernate.bytecode.use_reflection_optimizer=false, hibernate.generate_statistics=true, hibernate.hbm2ddl.auto=update, hibernate.jdbc.use_streams_for_binary=true, hibernate.max_fetch_depth=1, hibernate.connection.release_mode=auto, hibernate.format_sql=true, hibernate.connection.pool_size=1, current_session_context_class=thread, hibernate.autoReconnect=true, hibernate.cache.provider_class=org.hibernate.cache.HashtableCacheProvider, hibernate.use_sql_comments=true, hibernate.cglib.use_reflection_optimizer=true}
+2015-07-26 14:39:52.623  INFO 46990 --- [main] org.hibernate.cfg.Environment            : HHH000407: Using java.io streams to persist binary types
+2015-07-26 14:39:52.623  INFO 46990 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2015-07-26 14:39:54.017  INFO 46990 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-07-26 14:39:55.525  INFO 46990 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-07-26 14:39:55.557  INFO 46990 --- [main] o.h.e.jdbc.internal.LobCreatorBuilder    : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-07-26 14:39:55.953  INFO 46990 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2015-07-26 14:39:56.732  INFO 46990 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2015-07-26 14:39:56.755  INFO 46990 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2015-07-26 14:39:56.787  INFO 46990 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2015-07-26 14:39:56.789  INFO 46990 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2015-07-26 14:39:57.927  INFO 46990 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:39:58.109  WARN 46990 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not an managed type: class com.wl.mall.domain.User
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.wl.mall.Application.main(Application.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not an managed type: class com.wl.mall.domain.User
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not an managed type: class com.wl.mall.domain.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 29 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not an managed type: class com.wl.mall.domain.User
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:219)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:68)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getMetadata(JpaEntityInformationSupport.java:67)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:145)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:89)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:69)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:173)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:239)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:225)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 41 common frames omitted
+
+2015-07-26 14:39:58.114  INFO 46990 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2015-07-26 14:39:58.167  INFO 46990 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2015-07-26 14:39:58.193  INFO 46990 --- [main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground/target/classes/, file:/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-user/target/classes/, file:/Users/wrs/Documents/workspace/mall/mall-dependies/mall-module-common/target/classes/, file:/Users/wrs/Documents/workspace/mall/mall-util/target/classes/, file:/Users/wrs/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/Users/wrs/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar, file:/Users/wrs/.m2/repository/taglibs/standard/1.1.2/standard-1.1.2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-file/1.0-beta-2/wagon-file-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-2/wagon-http-lightweight-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-http-shared/1.0-beta-2/wagon-http-shared-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/jtidy/jtidy/4aug2000r7-dev/jtidy-4aug2000r7-dev.jar, file:/Users/wrs/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-2/wagon-provider-api-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar, file:/Users/wrs/.m2/repository/commons-cli/commons-cli/1.0/commons-cli-1.0.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-ssh-external/1.0-beta-2/wagon-ssh-external-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-ssh-common/1.0-beta-2/wagon-ssh-common-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-ssh/1.0-beta-2/wagon-ssh-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/com/jcraft/jsch/0.1.27/jsch-0.1.27.jar, file:/Users/wrs/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar, file:/Users/wrs/.m2/repository/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar, file:/Users/wrs/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar, file:/Users/wrs/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.2.5.RELEASE/spring-boot-starter-web-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.5.RELEASE/spring-boot-starter-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot/1.2.5.RELEASE/spring-boot-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.5.RELEASE/spring-boot-autoconfigure-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.2.5.RELEASE/spring-boot-starter-logging-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar, file:/Users/wrs/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.12/log4j-over-slf4j-1.7.12.jar, file:/Users/wrs/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar, file:/Users/wrs/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar, file:/Users/wrs/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar, file:/Users/wrs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.6/jackson-databind-2.4.6.jar, file:/Users/wrs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.6/jackson-annotations-2.4.6.jar, file:/Users/wrs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.6/jackson-core-2.4.6.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar, file:/Users/wrs/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/Users/wrs/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-core/4.1.7.RELEASE/spring-core-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-aop/4.1.7.RELEASE/spring-aop-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-expression/4.1.7.RELEASE/spring-expression-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.2.5.RELEASE/spring-boot-starter-data-jpa-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.2.5.RELEASE/spring-boot-starter-aop-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/aspectj/aspectjrt/1.8.6/aspectjrt-1.8.6.jar, file:/Users/wrs/.m2/repository/org/aspectj/aspectjweaver/1.8.6/aspectjweaver-1.8.6.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.2.5.RELEASE/spring-boot-starter-jdbc-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.0.23/tomcat-jdbc-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/tomcat-juli/8.0.23/tomcat-juli-8.0.23.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-tx/4.1.7.RELEASE/spring-tx-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.10.Final/hibernate-entitymanager-4.3.10.Final.jar, file:/Users/wrs/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, file:/Users/wrs/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar, file:/Users/wrs/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar, file:/Users/wrs/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar, file:/Users/wrs/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-orm/4.1.7.RELEASE/spring-orm-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/data/spring-data-jpa/1.7.3.RELEASE/spring-data-jpa-1.7.3.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/data/spring-data-commons/1.9.3.RELEASE/spring-data-commons-1.9.3.RELEASE.jar, file:/Users/wrs/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-aspects/4.1.7.RELEASE/spring-aspects-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.5.RELEASE/spring-boot-starter-tomcat-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.23/tomcat-embed-core-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.23/tomcat-embed-el-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.23/tomcat-embed-logging-juli-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.23/tomcat-embed-websocket-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-jasper/8.0.23/tomcat-embed-jasper-8.0.23.jar, file:/Users/wrs/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.2.5.RELEASE/spring-boot-starter-test-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, file:/Users/wrs/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar, file:/Users/wrs/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-test/4.1.7.RELEASE/spring-test-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/com/mchange/c3p0/0.9.2.1/c3p0-0.9.2.1.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-c3p0/4.3.6.Final/hibernate-c3p0-4.3.6.Final.jar, file:/Users/wrs/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar, file:/Users/wrs/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar, file:/Users/wrs/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar, file:/Users/wrs/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, file:/Users/wrs/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar, file:/Users/wrs/.m2/repository/com/mchange/mchange-commons-java/0.2.3.4/mchange-commons-java-0.2.3.4.jar, file:/Users/wrs/.m2/repository/net/sf/ehcache/ehcache-core/2.4.3/ehcache-core-2.4.3.jar, file:/Users/wrs/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-ehcache/4.3.10.Final/hibernate-ehcache-4.3.10.Final.jar, file:/Users/wrs/.m2/repository/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar]
+2015-07-26 14:39:58.196  INFO 46990 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2015-07-26 14:39:58.197 ERROR 46990 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not an managed type: class com.wl.mall.domain.User
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.wl.mall.Application.main(Application.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not an managed type: class com.wl.mall.domain.User
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not an managed type: class com.wl.mall.domain.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 29 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not an managed type: class com.wl.mall.domain.User
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:219)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:68)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getMetadata(JpaEntityInformationSupport.java:67)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:145)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:89)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:69)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:173)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:239)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:225)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	... 41 common frames omitted
+
+2015-07-26 14:40:36.066  INFO 46991 --- [main] com.wl.mall.Application                  : Starting Application on wenrishengdeMacBook-Pro.local with PID 46991 (/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground/target/classes started by wrs in /Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground)
+2015-07-26 14:40:36.412  INFO 46991 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:40:36 CST 2015]; root of context hierarchy
+2015-07-26 14:40:43.020  INFO 46991 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4dc1f0ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:40:43.237  INFO 46991 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:40:43.276  INFO 46991 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:40:43.318  INFO 46991 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:40:45.524  INFO 46991 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-07-26 14:40:46.544  INFO 46991 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-07-26 14:40:46.548  INFO 46991 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2015-07-26 14:40:48.253  INFO 46991 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2015-07-26 14:40:48.302  INFO 46991 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-07-26 14:40:48.304  INFO 46991 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11900 ms
+2015-07-26 14:40:48.730  INFO 46991 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-07-26 14:40:48.760  INFO 46991 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-07-26 14:40:49.998  INFO 46991 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-07-26 14:40:50.028  INFO 46991 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-07-26 14:40:50.433  INFO 46991 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.6.Final}
+2015-07-26 14:40:50.516  INFO 46991 --- [main] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.jdbc.batch_versioned_data=true, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.cache.region_prefix=hibernate.test, hibernate.show_sql=true, hibernate.proxool.pool_alias=pool1, hibernate.bytecode.use_reflection_optimizer=false, hibernate.generate_statistics=true, hibernate.hbm2ddl.auto=update, hibernate.jdbc.use_streams_for_binary=true, hibernate.max_fetch_depth=1, hibernate.connection.release_mode=auto, hibernate.format_sql=true, hibernate.connection.pool_size=1, current_session_context_class=thread, hibernate.autoReconnect=true, hibernate.cache.provider_class=org.hibernate.cache.HashtableCacheProvider, hibernate.use_sql_comments=true, hibernate.cglib.use_reflection_optimizer=true}
+2015-07-26 14:40:50.522  INFO 46991 --- [main] org.hibernate.cfg.Environment            : HHH000407: Using java.io streams to persist binary types
+2015-07-26 14:40:50.558  INFO 46991 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2015-07-26 14:40:51.740  INFO 46991 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-07-26 14:40:53.437  INFO 46991 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-07-26 14:40:53.489  INFO 46991 --- [main] o.h.e.jdbc.internal.LobCreatorBuilder    : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-07-26 14:40:54.090  INFO 46991 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2015-07-26 14:40:55.250  INFO 46991 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2015-07-26 14:40:55.251  INFO 46991 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2015-07-26 14:40:55.275  INFO 46991 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2015-07-26 14:40:55.462  INFO 46991 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: mall.user
+2015-07-26 14:40:55.464  INFO 46991 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [password, tel, id, account]
+2015-07-26 14:40:55.464  INFO 46991 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2015-07-26 14:40:55.468  INFO 46991 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2015-07-26 14:40:55.469  INFO 46991 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2015-07-26 14:40:56.566  INFO 46991 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:40:56.668  INFO 46991 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:40:57.361  INFO 46991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home]}" onto java.lang.String com.wl.mall.controller.HomeController.home()
+2015-07-26 14:40:57.364  INFO 46991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addUser]}" onto public java.lang.String com.wl.mall.controller.UserController.addUser(java.lang.String,java.lang.String)
+2015-07-26 14:40:57.373  INFO 46991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-07-26 14:40:57.373  INFO 46991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-07-26 14:40:57.429  INFO 46991 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2015-07-26 14:40:58.298  INFO 46991 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:40:36 CST 2015]; root of context hierarchy
+2015-07-26 14:40:59.868  INFO 46991 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-07-26 14:41:00.154 ERROR 46991 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:338)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:760)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:472)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:237)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:186)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:149)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.wl.mall.Application.main(Application.java:17)
+
+2015-07-26 14:41:00.157 ERROR 46991 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:237)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:186)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:149)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.wl.mall.Application.main(Application.java:17)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:338)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:760)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:472)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	... 13 common frames omitted
+
+2015-07-26 14:41:00.268  INFO 46991 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2015-07-26 14:41:00.296  INFO 46991 --- [main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground/target/classes/, file:/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-user/target/classes/, file:/Users/wrs/Documents/workspace/mall/mall-dependies/mall-module-common/target/classes/, file:/Users/wrs/Documents/workspace/mall/mall-util/target/classes/, file:/Users/wrs/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/Users/wrs/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar, file:/Users/wrs/.m2/repository/taglibs/standard/1.1.2/standard-1.1.2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-file/1.0-beta-2/wagon-file-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-2/wagon-http-lightweight-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-http-shared/1.0-beta-2/wagon-http-shared-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/jtidy/jtidy/4aug2000r7-dev/jtidy-4aug2000r7-dev.jar, file:/Users/wrs/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-2/wagon-provider-api-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar, file:/Users/wrs/.m2/repository/commons-cli/commons-cli/1.0/commons-cli-1.0.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-ssh-external/1.0-beta-2/wagon-ssh-external-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-ssh-common/1.0-beta-2/wagon-ssh-common-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar, file:/Users/wrs/.m2/repository/org/apache/maven/wagon/wagon-ssh/1.0-beta-2/wagon-ssh-1.0-beta-2.jar, file:/Users/wrs/.m2/repository/com/jcraft/jsch/0.1.27/jsch-0.1.27.jar, file:/Users/wrs/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar, file:/Users/wrs/.m2/repository/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar, file:/Users/wrs/.m2/repository/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar, file:/Users/wrs/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar, file:/Users/wrs/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar, file:/Users/wrs/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.2.5.RELEASE/spring-boot-starter-web-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.5.RELEASE/spring-boot-starter-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot/1.2.5.RELEASE/spring-boot-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.5.RELEASE/spring-boot-autoconfigure-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.2.5.RELEASE/spring-boot-starter-logging-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar, file:/Users/wrs/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.12/log4j-over-slf4j-1.7.12.jar, file:/Users/wrs/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar, file:/Users/wrs/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar, file:/Users/wrs/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar, file:/Users/wrs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.6/jackson-databind-2.4.6.jar, file:/Users/wrs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.6/jackson-annotations-2.4.6.jar, file:/Users/wrs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.6/jackson-core-2.4.6.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar, file:/Users/wrs/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/Users/wrs/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-core/4.1.7.RELEASE/spring-core-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-aop/4.1.7.RELEASE/spring-aop-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-expression/4.1.7.RELEASE/spring-expression-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.2.5.RELEASE/spring-boot-starter-data-jpa-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.2.5.RELEASE/spring-boot-starter-aop-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/aspectj/aspectjrt/1.8.6/aspectjrt-1.8.6.jar, file:/Users/wrs/.m2/repository/org/aspectj/aspectjweaver/1.8.6/aspectjweaver-1.8.6.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.2.5.RELEASE/spring-boot-starter-jdbc-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.0.23/tomcat-jdbc-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/tomcat-juli/8.0.23/tomcat-juli-8.0.23.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-tx/4.1.7.RELEASE/spring-tx-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.10.Final/hibernate-entitymanager-4.3.10.Final.jar, file:/Users/wrs/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, file:/Users/wrs/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar, file:/Users/wrs/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar, file:/Users/wrs/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar, file:/Users/wrs/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-orm/4.1.7.RELEASE/spring-orm-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/data/spring-data-jpa/1.7.3.RELEASE/spring-data-jpa-1.7.3.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/data/spring-data-commons/1.9.3.RELEASE/spring-data-commons-1.9.3.RELEASE.jar, file:/Users/wrs/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-aspects/4.1.7.RELEASE/spring-aspects-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.5.RELEASE/spring-boot-starter-tomcat-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.23/tomcat-embed-core-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.23/tomcat-embed-el-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.23/tomcat-embed-logging-juli-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.23/tomcat-embed-websocket-8.0.23.jar, file:/Users/wrs/.m2/repository/org/apache/tomcat/embed/tomcat-embed-jasper/8.0.23/tomcat-embed-jasper-8.0.23.jar, file:/Users/wrs/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2.jar, file:/Users/wrs/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.2.5.RELEASE/spring-boot-starter-test-1.2.5.RELEASE.jar, file:/Users/wrs/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, file:/Users/wrs/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar, file:/Users/wrs/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, file:/Users/wrs/.m2/repository/org/springframework/spring-test/4.1.7.RELEASE/spring-test-4.1.7.RELEASE.jar, file:/Users/wrs/.m2/repository/com/mchange/c3p0/0.9.2.1/c3p0-0.9.2.1.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-c3p0/4.3.6.Final/hibernate-c3p0-4.3.6.Final.jar, file:/Users/wrs/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar, file:/Users/wrs/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar, file:/Users/wrs/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar, file:/Users/wrs/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, file:/Users/wrs/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar, file:/Users/wrs/.m2/repository/com/mchange/mchange-commons-java/0.2.3.4/mchange-commons-java-0.2.3.4.jar, file:/Users/wrs/.m2/repository/net/sf/ehcache/ehcache-core/2.4.3/ehcache-core-2.4.3.jar, file:/Users/wrs/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar, file:/Users/wrs/.m2/repository/org/hibernate/hibernate-ehcache/4.3.10.Final/hibernate-ehcache-4.3.10.Final.jar, file:/Users/wrs/.m2/repository/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar]
+2015-07-26 14:41:00.296  INFO 46991 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2015-07-26 14:41:00.297 ERROR 46991 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Tomcat connector in failed state
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:157)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.wl.mall.Application.main(Application.java:17)
+
+2015-07-26 14:41:00.297  INFO 46991 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:40:36 CST 2015]; root of context hierarchy
+2015-07-26 14:41:00.299  INFO 46991 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2015-07-26 14:41:00.310  INFO 46991 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2015-07-26 14:41:23.767  INFO 46995 --- [main] com.wl.mall.Application                  : Starting Application on wenrishengdeMacBook-Pro.local with PID 46995 (/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground/target/classes started by wrs in /Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground)
+2015-07-26 14:41:24.063  INFO 46995 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:41:24 CST 2015]; root of context hierarchy
+2015-07-26 14:41:31.056  INFO 46995 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4dc1f0ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:41:31.246  INFO 46995 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:41:31.271  INFO 46995 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:41:31.323  INFO 46995 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:41:33.121  INFO 46995 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-07-26 14:41:34.207  INFO 46995 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-07-26 14:41:34.210  INFO 46995 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2015-07-26 14:41:36.185  INFO 46995 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2015-07-26 14:41:36.202  INFO 46995 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-07-26 14:41:36.204  INFO 46995 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12145 ms
+2015-07-26 14:41:37.040  INFO 46995 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-07-26 14:41:37.138  INFO 46995 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-07-26 14:41:37.452  INFO 46995 --- [localhost-startStop-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [131] milliseconds.
+2015-07-26 14:41:38.533  INFO 46995 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-07-26 14:41:38.569  INFO 46995 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-07-26 14:41:39.006  INFO 46995 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.6.Final}
+2015-07-26 14:41:39.022  INFO 46995 --- [main] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.jdbc.batch_versioned_data=true, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.cache.region_prefix=hibernate.test, hibernate.show_sql=true, hibernate.proxool.pool_alias=pool1, hibernate.bytecode.use_reflection_optimizer=false, hibernate.generate_statistics=true, hibernate.hbm2ddl.auto=update, hibernate.jdbc.use_streams_for_binary=true, hibernate.max_fetch_depth=1, hibernate.connection.release_mode=auto, hibernate.format_sql=true, hibernate.connection.pool_size=1, current_session_context_class=thread, hibernate.autoReconnect=true, hibernate.cache.provider_class=org.hibernate.cache.HashtableCacheProvider, hibernate.use_sql_comments=true, hibernate.cglib.use_reflection_optimizer=true}
+2015-07-26 14:41:39.028  INFO 46995 --- [main] org.hibernate.cfg.Environment            : HHH000407: Using java.io streams to persist binary types
+2015-07-26 14:41:39.033  INFO 46995 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2015-07-26 14:41:40.127  INFO 46995 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-07-26 14:41:41.173  INFO 46995 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-07-26 14:41:41.236  INFO 46995 --- [main] o.h.e.jdbc.internal.LobCreatorBuilder    : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-07-26 14:41:41.973  INFO 46995 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2015-07-26 14:41:43.274  INFO 46995 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2015-07-26 14:41:43.275  INFO 46995 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2015-07-26 14:41:43.292  INFO 46995 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2015-07-26 14:41:43.430  INFO 46995 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: mall.user
+2015-07-26 14:41:43.430  INFO 46995 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [password, tel, id, account]
+2015-07-26 14:41:43.430  INFO 46995 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2015-07-26 14:41:43.438  INFO 46995 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2015-07-26 14:41:43.439  INFO 46995 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2015-07-26 14:41:44.393  INFO 46995 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:41:44.537  INFO 46995 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:41:45.708  INFO 46995 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home]}" onto java.lang.String com.wl.mall.controller.HomeController.home()
+2015-07-26 14:41:45.709  INFO 46995 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addUser]}" onto public java.lang.String com.wl.mall.controller.UserController.addUser(java.lang.String,java.lang.String)
+2015-07-26 14:41:45.727  INFO 46995 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-07-26 14:41:45.731  INFO 46995 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-07-26 14:41:45.921  INFO 46995 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2015-07-26 14:41:47.319  INFO 46995 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:41:24 CST 2015]; root of context hierarchy
+2015-07-26 14:41:48.946  INFO 46995 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-07-26 14:41:49.142  INFO 46995 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2015-07-26 14:41:49.147  INFO 46995 --- [main] com.wl.mall.Application                  : Started Application in 26.458 seconds (JVM running for 28.229)
+2015-07-26 14:42:06.052  INFO 46995 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-07-26 14:42:06.053  INFO 46995 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2015-07-26 14:42:06.151  INFO 46995 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 97 ms
+2015-07-26 14:42:08.134  INFO 46995 --- [http-nio-8080-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    441845 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    31978408 nanoseconds spent preparing 1 JDBC statements;
+    1113276 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5845705 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:42:08.655  INFO 46995 --- [http-nio-8080-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:42:27.143  INFO 46995 --- [Thread-1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:41:24 CST 2015]; root of context hierarchy
+2015-07-26 14:42:27.151  INFO 46995 --- [Thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2015-07-26 14:42:27.159  INFO 46995 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2015-07-26 14:43:30.540  INFO 46998 --- [main] com.wl.mall.Application                  : Starting Application on wenrishengdeMacBook-Pro.local with PID 46998 (/Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground/target/classes started by wrs in /Users/wrs/Documents/workspace/mall/mall-dependies/mall-all/mall-module-foreground)
+2015-07-26 14:43:30.619  INFO 46998 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:43:30 CST 2015]; root of context hierarchy
+2015-07-26 14:43:32.886  INFO 46998 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4dc1f0ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:43:32.922  INFO 46998 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:43:32.933  INFO 46998 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:43:32.940  INFO 46998 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-26 14:43:33.908  INFO 46998 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-07-26 14:43:34.348  INFO 46998 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-07-26 14:43:34.350  INFO 46998 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2015-07-26 14:43:35.119  INFO 46998 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2015-07-26 14:43:35.152  INFO 46998 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-07-26 14:43:35.153  INFO 46998 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4539 ms
+2015-07-26 14:43:35.441  INFO 46998 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-07-26 14:43:35.459  INFO 46998 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-07-26 14:43:35.985  INFO 46998 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-07-26 14:43:35.999  INFO 46998 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-07-26 14:43:36.176  INFO 46998 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.6.Final}
+2015-07-26 14:43:36.185  INFO 46998 --- [main] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.jdbc.batch_versioned_data=true, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.cache.region_prefix=hibernate.test, hibernate.show_sql=true, hibernate.proxool.pool_alias=pool1, hibernate.bytecode.use_reflection_optimizer=false, hibernate.generate_statistics=true, hibernate.hbm2ddl.auto=update, hibernate.jdbc.use_streams_for_binary=true, hibernate.max_fetch_depth=1, hibernate.connection.release_mode=auto, hibernate.format_sql=true, hibernate.connection.pool_size=1, current_session_context_class=thread, hibernate.autoReconnect=true, hibernate.cache.provider_class=org.hibernate.cache.HashtableCacheProvider, hibernate.use_sql_comments=true, hibernate.cglib.use_reflection_optimizer=true}
+2015-07-26 14:43:36.186  INFO 46998 --- [main] org.hibernate.cfg.Environment            : HHH000407: Using java.io streams to persist binary types
+2015-07-26 14:43:36.186  INFO 46998 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2015-07-26 14:43:36.753  INFO 46998 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-07-26 14:43:37.683  INFO 46998 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-07-26 14:43:37.697  INFO 46998 --- [main] o.h.e.jdbc.internal.LobCreatorBuilder    : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-07-26 14:43:37.936  INFO 46998 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2015-07-26 14:43:38.334  INFO 46998 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2015-07-26 14:43:38.334  INFO 46998 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2015-07-26 14:43:38.339  INFO 46998 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2015-07-26 14:43:38.373  INFO 46998 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: mall.user
+2015-07-26 14:43:38.374  INFO 46998 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [password, tel, id, account]
+2015-07-26 14:43:38.374  INFO 46998 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2015-07-26 14:43:38.374  INFO 46998 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2015-07-26 14:43:38.375  INFO 46998 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2015-07-26 14:43:38.786  INFO 46998 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:43:38.807  INFO 46998 --- [main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:43:39.136  INFO 46998 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home]}" onto java.lang.String com.wl.mall.controller.HomeController.home()
+2015-07-26 14:43:39.137  INFO 46998 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addUser]}" onto public java.lang.String com.wl.mall.controller.UserController.addUser(java.lang.String,java.lang.String)
+2015-07-26 14:43:39.143  INFO 46998 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-07-26 14:43:39.143  INFO 46998 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-07-26 14:43:39.170  INFO 46998 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2015-07-26 14:43:39.550  INFO 46998 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:43:30 CST 2015]; root of context hierarchy
+2015-07-26 14:43:40.088  INFO 46998 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-07-26 14:43:40.268  INFO 46998 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2015-07-26 14:43:40.277  INFO 46998 --- [main] com.wl.mall.Application                  : Started Application in 10.266 seconds (JVM running for 11.167)
+2015-07-26 14:44:06.199  INFO 46998 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-07-26 14:44:06.200  INFO 46998 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2015-07-26 14:44:06.418  INFO 46998 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 212 ms
+2015-07-26 14:44:09.964  INFO 46998 --- [http-nio-8080-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    169955 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    106003364 nanoseconds spent preparing 1 JDBC statements;
+    15777601 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    23856207 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:44:10.535  INFO 46998 --- [http-nio-8080-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2015-07-26 14:46:32.925  INFO 46998 --- [Thread-1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f490758: startup date [Sun Jul 26 14:43:30 CST 2015]; root of context hierarchy
+2015-07-26 14:46:32.952  INFO 46998 --- [Thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2015-07-26 14:46:32.965  INFO 46998 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

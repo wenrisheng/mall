@@ -5,12 +5,5 @@
     <artifactId>mall-all</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>mall-module-foreground</artifactId>
-  <packaging>war</packaging>
-  <dependencies>
-  	<dependency>
-  		<groupId>com.wl.mall</groupId>
-  		<artifactId>mall-module-user</artifactId>
-  	</dependency>
-  </dependencies>
+  <artifactId>mall-module-user</artifactId>
 </project>
