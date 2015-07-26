@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.wl.mall</groupId>
 	<artifactId>mall</artifactId>
@@ -20,6 +20,7 @@
 	   <com.mchange.c3p0.version>0.9.2.1</com.mchange.c3p0.version>
 		<com.mchange.mchange-commons-java.version>0.2.3.4</com.mchange.mchange-commons-java.version>
 	<net.sf.ehcache.version>2.4.3</net.sf.ehcache.version>
+			<org.apache.maven.plugins.maven-war-plugin.version>2.3</org.apache.maven.plugins.maven-war-plugin.version>
 	</properties>
 	<!-- 依赖管理 -->
 	<dependencyManagement>
@@ -47,6 +48,12 @@
 				<artifactId>mall-module-user</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
+			<dependency>
+				<groupId>com.wl.mall</groupId>
+				<artifactId>mall-module-resources</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<type>war</type>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -54,6 +61,7 @@
 		<module>mall-util</module>
 		<module>mall-dependies</module>
 		<module>mall-doc</module>
-	</modules>
+ 
+  </modules>
 
 </project>

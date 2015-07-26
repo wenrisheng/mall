@@ -12,5 +12,32 @@
   		<groupId>com.wl.mall</groupId>
   		<artifactId>mall-module-user</artifactId>
   	</dependency>
+  	<dependency>
+  		<groupId>com.wl.mall</groupId>
+  		<artifactId>mall-module-resources</artifactId>
+  		<type>war</type>
+  	</dependency>
   </dependencies>
+  
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<overlays>
+						<overlay>
+							<groupId>com.wl.mall</groupId>
+							<artifactId>mall-module-resources</artifactId>
+							<!-- <classifier>war</classifier>
+							<excludes>
+								<exclude>*/web.xml,WEB-INF/lib/*</exclude>
+							</excludes> -->
+						</overlay>
+					</overlays>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
 </project>
