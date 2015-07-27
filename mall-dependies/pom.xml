@@ -62,6 +62,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<!-- 打包成war时去除tomcat相关的jar包 -->
+			  <exclusions>
+           	<exclusion>
+           		<groupId>org.springframework.boot</groupId>
+        		<artifactId>spring-boot-starter-tomcat</artifactId>
+           	</exclusion>
+           </exclusions> 
 		</dependency>
 		<!--spring boot data jpa -->
 				<dependency>
@@ -194,10 +201,10 @@
         </pluginManagement>
         
         <plugins>
-            <plugin>
+<!--             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 

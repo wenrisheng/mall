@@ -13,13 +13,14 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter {
 
+	/**
+	 * <mvc:default-servlet-handler/>
+	 */
 	 @Override
 	    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 	        configurer.enable();
 	    }
 
-	 
-	 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		// TODO Auto-generated method stub
