@@ -1,0 +1,79 @@
+整个项目采用maven+jpa+spring boot+spring mvc架构
+版本控制：
+git:https://github.com/wenrisheng/mall.git
+
+各架构版本：
+jdk                       1.8
+maven                     3.3.3
+Eclipse Java EE IDE for Web Developers 4.2.2
+spring boot                1.2.5.RELEASE
+ 
+mall                        pom                 maven项目
+-mall-dependies             pom                 依赖配置
+-mall-doc                   module              项目说明文档
+-mall-util                  module              工具模块          
+
+mall-dependies              pom                 依赖配置
+-mall-all                   pom                 父项目
+-mall-module-common         jar                 项目共有依赖 
+
+mall-all                   pom                  父项目
+-mall-module-resources     war                  资源模块,存放前端第三方控件或前端公用模块
+-mall-module-user          jar                  用户模块
+-mall-module-manager       jar                  管理员模块
+-mall-module-foreground    war                  前台模块
+-mall-module-background    war                  后台模块
+
+
+
+
+                                                   mall
+                                                    ｜
+                ____________________________________________________________________                                   
+                |                                   |                               |
+            mall-doc                           mall-dependies -------------> mall-module-util
+            项目文档模块                          依赖配置模块｜                             工具类模块
+                                      -------------------------------------------
+                                      |                                         |
+                                  mall-all  -------------------------> mall-module-common
+                        项目依赖配置模块 ｜                                    项目公共模块
+          ------------------------------------------------------------------------                         
+          |               |                |                  |                   |
+ mall-background mall-foreground mall-module-resources mall-module-user mall-module-menu                                 
+      后台模块             前台模块        公共资源模块            用户模块           菜单模块                     
+
+
+每个模块包命名都以com.wl.mall开头＋分层逻辑名（如：下面的几个常用层）
+－**.domain                                     domain层
+－**.repository                                 dao层
+－**.service                                    service层
+－**.controller                                 controller层
+－**.web                                        web层
+
+/*************每个模块的结构目录*****************/
+ProjectName                                    模块名
+-src/main/java                                
+-src/main/resources
+-src/test/java
+-src/test/resources
+-Maven Dependencies
+-JRE System Library
+-src
+--main
+---webapp
+----common                                      存放模块公共页面，如头部、尾部页面
+----resources                                   模块资源文件夹
+-----css                                        存放css，根据情况再建立子文件夹
+-----images                                     存放图片，据情况再建立子文件夹
+-----js                                         存放javascript文件，据情况再建立子文件夹
+----WEB-INF
+-----logs                                       存放模块日志，保持log4j的日志
+-----jsp                                        存放jsp页面，据情况再建立子文件夹
+-----uploadfile                                 存放上传文件（上传文件暂时放在这里，后期可能要改为配置文件定义存放路径）
+----index.jsp
+-target
+
+全部使用HQL语句操作
+
+
+

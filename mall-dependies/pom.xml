@@ -50,14 +50,14 @@
 
 
 		<!-- ******************** spring 依赖配置 ****************** -->
-		<dependency>
-			<!--spring boot -->
+<!-- 		<dependency>
+			spring boot
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-dependencies</artifactId>
 			<version>${org.springframework.boot.version}</version>
 			<type>pom</type>
-			 <!-- <scope>import</scope> -->
-		</dependency>
+			 <scope>import</scope>
+		</dependency> -->
 <!--spring boot web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
