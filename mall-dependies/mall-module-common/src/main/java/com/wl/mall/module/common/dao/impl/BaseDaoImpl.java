@@ -19,7 +19,7 @@ import com.wl.mall.module.common.dao.GenericsUtils;
 @Component("baseDao")
 public class BaseDaoImpl<T> implements BaseDao<T>  {
 	 
-	//@Resource
+	@Resource
 	private SessionFactory sessionFactory;
 
 	private Session getCurrentSession() {

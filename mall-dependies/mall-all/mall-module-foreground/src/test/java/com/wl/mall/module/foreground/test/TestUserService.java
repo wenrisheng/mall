@@ -23,7 +23,7 @@ public class TestUserService {
 UserService userService;
 	@Test
 	public void test() {
-		userService.saveUser(new User("database", "123", "asdfa", "asdfas", "252747@", "image", "nickName", new Date(), new Date(), "252797991", "127.0.0.1", "广州"));
+		userService.saveUser(new User("hibernate33333", "123", "asdfa", "asdfas", "252747@", "image", "nickName", new Date(), new Date(), "252797991", "127.0.0.1", "广州"));
 	}
 
 }

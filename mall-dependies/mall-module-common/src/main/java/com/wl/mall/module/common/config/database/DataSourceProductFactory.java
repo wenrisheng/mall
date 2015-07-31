@@ -1,4 +1,4 @@
-package com.wl.mall.module.common.config.datasource;
+package com.wl.mall.module.common.config.database;
 
 import java.beans.PropertyVetoException;
 

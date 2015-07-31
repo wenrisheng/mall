@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 //@ImportResource("classpath:application-service.xml")
 @SpringBootApplication
 //@EntityScan(basePackages = "com.wl.mall.domain")
-@EnableJpaRepositories ( entityManagerFactoryRef = "entityManagerFactory", transactionManagerRef = "transactionManager", basePackages = { "com.wl.mall.repository" })
+@EnableJpaRepositories ( entityManagerFactoryRef = "managerFactory", transactionManagerRef = "transactionManager", basePackages = { "com.wl.mall.repository" })
 
 //implements WebApplicationInitializer
 public class Application extends SpringBootServletInitializer{

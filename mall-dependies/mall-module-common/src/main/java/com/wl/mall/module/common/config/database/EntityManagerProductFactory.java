@@ -1,4 +1,4 @@
-package com.wl.mall.module.common.config.datasource;
+package com.wl.mall.module.common.config.database;
 
 import java.beans.PropertyVetoException;
 import java.io.IOException;
@@ -8,21 +8,24 @@ import javax.annotation.Resource;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
+import org.hibernate.SessionFactory;
 import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+
 import com.wl.mall.module.common.config.util.AbstractProductFactory;
 import com.wl.mall.util.io.PropertiesUtil;
 
 @Configuration
 @PropertySource("classpath:scan_entity.properties")
 public class EntityManagerProductFactory extends
-AbstractProductFactory<EntityManagerFactory> {
+AbstractProductFactory<Object> {
 
 	@Resource
 	DataSource dataSource;
@@ -30,19 +33,23 @@ AbstractProductFactory<EntityManagerFactory> {
 	private String entity_path;
 	
 	@Override
-	@Bean(name = "entityManagerFactory")
-	@Primary
-	public EntityManagerFactory product() {
+	@Bean(name = "managerFactory")
+	//@Primary
+	public Object product() {
 		// TODO Auto-generated method stub
-		EntityManagerFactory entityManagerFactory  = null;
+		Object obj  = null;
 		try {
 		switch (this.getDatabaseConfig().getFactoryType()) {
 		case 0:
 		{	
-		 entityManagerFactory = this.jpaEntityManagerFactory();
+			obj = this.jpaEntityManagerFactory();
 		}
 			break;
-
+		case 1:
+		{	
+			obj = this.localSessionFactoryBean();
+		}
+			break;
 		default:
 			break;
 		}
@@ -50,9 +57,15 @@ AbstractProductFactory<EntityManagerFactory> {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return entityManagerFactory;
+		return obj;
 	}
 	
+	/**
+	 * jpa 实体管理类
+	 * 
+	 * @return
+	 * @throws PropertyVetoException
+	 */
 	private EntityManagerFactory jpaEntityManagerFactory()
 			throws PropertyVetoException {
 		HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
@@ -71,6 +84,21 @@ AbstractProductFactory<EntityManagerFactory> {
 		return entityManagerFactory;
 	}
 
+	/**
+	 * hibernate sessionFactory
+	 * @return
+	 */
+	public SessionFactory localSessionFactoryBean() {
+		LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
+		sessionFactoryBean.setDataSource(dataSource);
+		//String[] packagesToScan = new String[] { entity_path};
+		sessionFactoryBean.setPackagesToScan(entity_path);
+		sessionFactoryBean.setHibernateProperties(getHibernteProperties());
+		SessionFactory sessionFactory = sessionFactoryBean.getObject();
+		return sessionFactory;
+
+	}
+	
 	private Properties getHibernteProperties() {
 		Properties properties = null;
 		try {
