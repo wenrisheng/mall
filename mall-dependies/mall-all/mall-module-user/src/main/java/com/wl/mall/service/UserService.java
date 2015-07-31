@@ -1,10 +1,12 @@
 package com.wl.mall.service;
 
-import com.wl.mall.domain.User;
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+import com.wl.mall.entity.User;
 
 
 
-public interface UserService {
+public interface UserService extends UserDetailsService{
 
 public abstract void saveUser(User user);
 }

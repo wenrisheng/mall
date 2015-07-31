@@ -16,8 +16,8 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
-@Configuration
-@PropertySource("classpath:hibernate.properties")
+//@Configuration
+//@PropertySource("classpath:hibernate.properties")
 public class TransactionManagerConfig {
 	
 	@Resource
@@ -26,8 +26,8 @@ public class TransactionManagerConfig {
 	@Resource
     private DataSource dataSource;
 	
-	@Bean()
-	@Primary
+//	@Bean()
+//	@Primary
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory() throws PropertyVetoException {
 		HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		vendorAdapter.setGenerateDdl(true);

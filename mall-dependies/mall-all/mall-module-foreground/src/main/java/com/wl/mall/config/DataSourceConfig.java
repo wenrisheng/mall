@@ -12,16 +12,16 @@ import org.springframework.core.env.Environment;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
-@Configuration
-@PropertySource("classpath:datasource.properties")
+//@Configuration
+//@PropertySource("classpath:datasource.properties")
 public class DataSourceConfig {
 
 	@Resource
 	private Environment env;
 
 
-	@Bean(name = "dataSource")
-	@Primary
+//	@Bean(name = "dataSource")
+//	@Primary
 	public DataSource dataSource() throws PropertyVetoException {
 
 		String driverClass = env
