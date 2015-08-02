@@ -1,5 +1,5 @@
 package com.wl.mall.module.test;
 
-public class BaseCongtrollerTest {
+public class BaseControllerTest {
 
 }
