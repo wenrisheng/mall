@@ -1,14 +1,4 @@
-/*
- * COPYRIGHT Beijing NetQin-Tech Co.,Ltd.                                   *
- ****************************************************************************
- * 源文件名:  web.dao.hibernate.impl.CP_Hibernate4DAOImpl.java 													       
- * 功能: cpframework框架													   
- * 版本:	@version 1.0	                                                                   
- * 编制日期: 2014年8月18日 下午5:51:16 						    						                                        
- * 修改历史: (主要历史变动原因及说明)		
- * YYYY-MM-DD |    Author      |	 Change Description		      
- * 2014年8月18日    |    Administrator     |     Created 
- */
+
 package com.wl.mall.module.common.dao.impl;
 
 import java.io.Serializable;
@@ -50,7 +40,7 @@ public class HibernateDaoImpl implements HibernateDao{
 		 */
 		private Logger logger = Logger.getLogger(HibernateDaoImpl.class);
 		
-		@Resource(name = "managerFactory")
+		//@Resource(name = "managerFactory")
 		private SessionFactory sessionFactory;
 
 		public SessionFactory getSessionFactory() {

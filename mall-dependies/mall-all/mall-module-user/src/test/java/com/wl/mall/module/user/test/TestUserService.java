@@ -1,4 +1,4 @@
-package com.wl.mall.module.foreground.test;
+package com.wl.mall.module.user.test;
 
 import java.util.Date;
 

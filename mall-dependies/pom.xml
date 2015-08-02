@@ -9,8 +9,9 @@
 	<artifactId>mall-dependies</artifactId>
 	<packaging>pom</packaging>
 	<modules>
-		<module>mall-all</module>
 		<module>mall-module-common</module>
+		<module>mall-module-test</module>
+		<module>mall-all</module>
 	</modules>
 	<dependencies>
 		<dependency>

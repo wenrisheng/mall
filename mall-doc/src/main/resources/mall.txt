@@ -15,7 +15,7 @@ mall                        pom                 maven项目
 
 mall-dependies              pom                 依赖配置
 -mall-all                   pom                 父项目
--mall-module-common         jar                 项目共有依赖 
+-mall-module-common         jar                 web共有依赖 
 
 mall-all                   pom                  父项目
 -mall-module-resources     war                  资源模块,存放前端第三方控件或前端公用模块
@@ -33,10 +33,14 @@ mall-all                   pom                  父项目
                 |                                   |                               |
             mall-doc                           mall-dependies -------------> mall-module-util
             项目文档模块                          依赖配置模块｜                             工具类模块
-                                      -------------------------------------------
-                                      |                                         |
-                                  mall-all  -------------------------> mall-module-common
-                        项目依赖配置模块 ｜                                    项目公共模块
+                            ----------------------------------------------------------------------------
+                            |                                         |                                 |
+                         mall-all  -------------------------> mall-module-common  <------------- mall-module-test     
+                            |                                     项目公共模块                             ^ test
+                            |                                                                            |
+                            -----------------------------------------------------------------------------
+                      项目依赖配置模块                                
+                            |
           ------------------------------------------------------------------------                         
           |               |                |                  |                   |
  mall-background mall-foreground mall-module-resources mall-module-user mall-module-menu                                 
@@ -74,6 +78,10 @@ ProjectName                                    模块名
 -target
 
 全部使用HQL语句操作
+
+-mall-module-common :
+com.wl.mall.module.common
+-config:数据源、数据库连接池、实体管理、事务管理，采用工厂模式设计
 
 
 

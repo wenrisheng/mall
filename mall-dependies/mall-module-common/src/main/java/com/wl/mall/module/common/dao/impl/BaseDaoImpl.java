@@ -1,25 +1,20 @@
 package com.wl.mall.module.common.dao.impl;
 
 import java.io.Serializable;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.aspectj.weaver.patterns.ThisOrTargetAnnotationPointcut;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Component;
-
 import com.wl.mall.module.common.dao.BaseDao;
-import com.wl.mall.module.common.dao.GenericsUtils;
 
-@Component("baseDao")
+//@Component("baseDao")
 public class BaseDaoImpl<T> implements BaseDao<T>  {
 	 
-	@Resource
+	//@Resource(name = "managerFactory")
 	private SessionFactory sessionFactory;
 
 	private Session getCurrentSession() {
