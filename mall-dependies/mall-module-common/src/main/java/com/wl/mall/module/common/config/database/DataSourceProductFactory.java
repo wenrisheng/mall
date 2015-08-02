@@ -31,7 +31,6 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 		try {
 			switch (this.getDatabaseConfig().getDatasourceType()) {
 			case 0: {
-
 				dataSource = this.comboPooledDataSource();
 
 			}

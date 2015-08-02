@@ -83,5 +83,13 @@ ProjectName                                    模块名
 com.wl.mall.module.common
 -config:数据源、数据库连接池、实体管理、事务管理，采用工厂模式设计
 
+mall-module-test :
+ApplicationTest属于普通测试应用类，ApplicationViewTest属于web测试应用类
+repository、service、controller、view层测试
+repository层测试继承BaseRepositoryTest
+service层测试继承BaseRepositoryTest
+view层测试BaseViewTest
+controller层测试暂时没用到
+
 
 

@@ -3,12 +3,9 @@ package com.wl.mall.module.common.dao.impl;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.annotation.Resource;
-
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.springframework.stereotype.Component;
 import com.wl.mall.module.common.dao.BaseDao;
 
 //@Component("baseDao")
