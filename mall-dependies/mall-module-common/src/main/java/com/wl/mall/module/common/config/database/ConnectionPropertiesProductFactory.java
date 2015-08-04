@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
-import com.wl.mall.module.common.config.util.AbstractProductFactory;
-import com.wl.mall.module.common.config.util.ConnectionProperties;
+import com.wl.mall.module.common.config.ConnectionProperties;
+import com.wl.mall.module.common.config.factory.AbstractProductFactory;
 @Configuration
 public class ConnectionPropertiesProductFactory extends
 		AbstractProductFactory<ConnectionProperties> {

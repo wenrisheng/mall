@@ -1,4 +1,4 @@
-package com.wl.mall.module.common.config.util;
+package com.wl.mall.module.common.config;
 
 import org.hibernate.validator.constraints.NotBlank;
 

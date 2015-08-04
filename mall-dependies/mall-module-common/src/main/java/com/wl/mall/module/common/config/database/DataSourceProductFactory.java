@@ -13,8 +13,8 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
-import com.wl.mall.module.common.config.util.AbstractProductFactory;
-import com.wl.mall.module.common.config.util.ConnectionProperties;
+import com.wl.mall.module.common.config.ConnectionProperties;
+import com.wl.mall.module.common.config.factory.AbstractProductFactory;
 
 @Configuration
 public class DataSourceProductFactory extends AbstractProductFactory<DataSource> {
@@ -32,7 +32,6 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 			switch (this.getDatabaseConfig().getDatasourceType()) {
 			case 0: {
 				dataSource = this.comboPooledDataSource();
-
 			}
 				break;
 			case 1: {

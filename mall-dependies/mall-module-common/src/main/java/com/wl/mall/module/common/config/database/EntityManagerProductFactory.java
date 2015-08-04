@@ -21,7 +21,8 @@ import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
-import com.wl.mall.module.common.config.util.AbstractProductFactory;
+import com.wl.mall.module.common.config.factory.AbstractProductFactory;
+
 
 @Configuration
 @PropertySource("classpath:scan_entity.properties")
@@ -92,7 +93,6 @@ AbstractProductFactory<Object> {
 	public SessionFactory localSessionFactoryBean() {
 		LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
 		sessionFactoryBean.setDataSource(dataSource);
-		//String[] packagesToScan = new String[] { entity_path};
 		sessionFactoryBean.setPackagesToScan(entity_path);
 		sessionFactoryBean.setHibernateProperties(getHibernteProperties());
 		SessionFactory sessionFactory = sessionFactoryBean.getObject();

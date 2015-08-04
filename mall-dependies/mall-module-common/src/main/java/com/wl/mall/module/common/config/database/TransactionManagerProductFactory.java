@@ -13,7 +13,7 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
-import com.wl.mall.module.common.config.util.AbstractProductFactory;
+import com.wl.mall.module.common.config.factory.AbstractProductFactory;
 
 @Configuration
 public class TransactionManagerProductFactory extends AbstractProductFactory<PlatformTransactionManager> {

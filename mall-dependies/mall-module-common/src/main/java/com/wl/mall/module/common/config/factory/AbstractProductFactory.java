@@ -1,6 +1,8 @@
-package com.wl.mall.module.common.config.util;
+package com.wl.mall.module.common.config.factory;
 
 import javax.annotation.Resource;
+
+import com.wl.mall.module.common.config.DatabaseConfig;
 
 public abstract class AbstractProductFactory<T> implements ProductFactory<T> {
 
