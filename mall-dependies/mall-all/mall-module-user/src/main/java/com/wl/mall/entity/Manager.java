@@ -1,4 +1,4 @@
-package com.wl.mall.entity.user;
+package com.wl.mall.entity;
 
 // Generated 2015-8-4 21:30:39 by Hibernate Tools 4.3.1
 
