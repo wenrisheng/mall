@@ -6,7 +6,6 @@ import javax.annotation.Resource;
 
 import org.junit.Test;
 
-import com.wl.mall.entity.User;
 import com.wl.mall.module.test.BaseServiceTest;
 import com.wl.mall.service.UserService;
 
@@ -19,7 +18,6 @@ public class TestUserService extends BaseServiceTest{
 UserService userService;
 	@Test
 	public void testSaveUser() {
-		userService.saveUser(new User("hibernate33333", "123", "asdfa", "asdfas", "252747@", "image", "nickName", new Date(), new Date(), "252797991", "127.0.0.1", "广州"));
 	}
 
 }

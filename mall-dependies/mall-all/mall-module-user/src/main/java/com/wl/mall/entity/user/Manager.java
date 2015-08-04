@@ -1,7 +1,6 @@
-package com.wl.mall.entity;
+package com.wl.mall.entity.user;
 
-// default package
-// Generated 2015-7-31 15:17:35 by Hibernate Tools 4.3.1
+// Generated 2015-8-4 21:30:39 by Hibernate Tools 4.3.1
 
 import java.util.Date;
 import javax.persistence.Column;
@@ -32,6 +31,11 @@ public class Manager implements java.io.Serializable {
 	public Manager() {
 	}
 
+	public Manager(String account, String password) {
+		this.account = account;
+		this.password = password;
+	}
+
 	public Manager(String account, String password, String tel, String address,
 			String email, Date addTime, Date updateTime) {
 		this.account = account;
@@ -54,7 +58,7 @@ public class Manager implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "account", nullable = false, length = 20)
+	@Column(name = "account", nullable = false, length = 32)
 	public String getAccount() {
 		return this.account;
 	}
@@ -63,7 +67,7 @@ public class Manager implements java.io.Serializable {
 		this.account = account;
 	}
 
-	@Column(name = "password", nullable = false, length = 20)
+	@Column(name = "password", nullable = false, length = 32)
 	public String getPassword() {
 		return this.password;
 	}
@@ -72,7 +76,7 @@ public class Manager implements java.io.Serializable {
 		this.password = password;
 	}
 
-	@Column(name = "tel", nullable = false, length = 20)
+	@Column(name = "tel", length = 32)
 	public String getTel() {
 		return this.tel;
 	}
@@ -81,7 +85,7 @@ public class Manager implements java.io.Serializable {
 		this.tel = tel;
 	}
 
-	@Column(name = "address", nullable = false, length = 20)
+	@Column(name = "address", length = 64)
 	public String getAddress() {
 		return this.address;
 	}
@@ -90,7 +94,7 @@ public class Manager implements java.io.Serializable {
 		this.address = address;
 	}
 
-	@Column(name = "email", nullable = false, length = 20)
+	@Column(name = "email", length = 256)
 	public String getEmail() {
 		return this.email;
 	}
@@ -100,7 +104,7 @@ public class Manager implements java.io.Serializable {
 	}
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "add_time", nullable = false, length = 19)
+	@Column(name = "add_time", length = 19)
 	public Date getAddTime() {
 		return this.addTime;
 	}
@@ -110,7 +114,7 @@ public class Manager implements java.io.Serializable {
 	}
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "update_time", nullable = false, length = 19)
+	@Column(name = "update_time", length = 19)
 	public Date getUpdateTime() {
 		return this.updateTime;
 	}

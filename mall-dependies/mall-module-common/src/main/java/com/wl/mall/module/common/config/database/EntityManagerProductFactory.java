@@ -2,6 +2,7 @@ package com.wl.mall.module.common.config.database;
 
 import java.beans.PropertyVetoException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 import javax.annotation.Resource;
@@ -13,13 +14,14 @@ import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 import com.wl.mall.module.common.config.util.AbstractProductFactory;
-import com.wl.mall.util.io.PropertiesUtil;
 
 @Configuration
 @PropertySource("classpath:scan_entity.properties")
@@ -33,7 +35,7 @@ AbstractProductFactory<Object> {
 	
 	@Override
 	@Bean(name = "managerFactory")
-	//@Primary
+	@Primary
 	public Object product() {
 		// TODO Auto-generated method stub
 		Object obj  = null;
@@ -99,12 +101,16 @@ AbstractProductFactory<Object> {
 	}
 	
 	private Properties getHibernteProperties() {
-		Properties properties = null;
+		Properties properties = new Properties();
 		try {
-			PropertiesUtil.loadProperties("classpath:hibernate.properties");
+			ClassPathResource classPathResource = new ClassPathResource("hibernate.properties");
+			InputStream inputStream = classPathResource.getInputStream();
+			properties.load(inputStream);
+		
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		
 		}
 		return properties;
 		// String[] keys = {
