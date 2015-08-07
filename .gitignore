@@ -11,8 +11,8 @@ git.properties
 
 # project
 *.settings/
-*.classpath
-*.project
+#*.classpath
+#*.project
 .metadata
 
 #svn
