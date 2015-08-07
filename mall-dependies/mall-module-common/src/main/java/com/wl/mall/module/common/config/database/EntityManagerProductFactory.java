@@ -36,7 +36,7 @@ AbstractProductFactory<Object> {
 	
 	@Override
 	@Bean(name = "managerFactory")
-	@Primary
+	//@Primary
 	public Object product() {
 		// TODO Auto-generated method stub
 		Object obj  = null;

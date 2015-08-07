@@ -1,0 +1,39 @@
+---
+spring:
+    profiles: dev
+
+datasource.url:
+jdbc\:mysql\://127.0.0.1\:3306/mall?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;mysqlEncoding=utf8
+
+datasource.userName root
+
+datasource.password 123456
+
+---
+
+datasource.driverClassName com.mysql.jdbc.Driver
+
+## set the maximum depth of the outer join fetch tree
+
+# chu shi hua lian jie shu
+datasource.initialPoolSize 3
+
+# zui xiao lian jie shu
+datasource.minPoolSize 2
+
+# zui da lian jie shu
+datasource.maxPoolSize 50
+
+# lian jie mei you shi, yi chi zeng jia de lian jie shu
+datasource.acquireIncrement 3
+
+# jian cha kong xuan lian jie de jian ge shi jian
+datasource.idleConnectionTextPeriod 1800
+       
+# PreparedStatements shu liang                         
+datasource.maxStatements 100
+
+datasource.numHelperThreads 10
+
+# zui da kong xuan shi jian 
+datasource.maxIdleTime 60

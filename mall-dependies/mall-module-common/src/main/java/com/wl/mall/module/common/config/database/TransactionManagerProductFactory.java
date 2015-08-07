@@ -23,7 +23,7 @@ public class TransactionManagerProductFactory extends AbstractProductFactory<Pla
 	
 	@Override
 	@Bean(name = "transactionManager")
-	@Primary
+	//@Primary
 	public PlatformTransactionManager product() {
 		// TODO Auto-generated method stub
 		PlatformTransactionManager transactionManager = null;

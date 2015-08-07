@@ -7,7 +7,7 @@ import com.wl.mall.entity.User;
 
 
 
-@Repository("userRepository")
+//@Repository("userRepository")
 public interface UserRepository extends JpaRepository<User, Long> {
 
 
