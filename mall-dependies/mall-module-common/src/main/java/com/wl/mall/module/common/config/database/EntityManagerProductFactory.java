@@ -9,6 +9,7 @@ import javax.annotation.Resource;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
+import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.beans.factory.annotation.Value;
@@ -28,17 +29,18 @@ import com.wl.mall.module.common.config.factory.AbstractProductFactory;
 @PropertySource("classpath:scan_entity.properties")
 public class EntityManagerProductFactory extends
 AbstractProductFactory<Object> {
-
+	private static final Logger logger = Logger  
+            .getLogger(EntityManagerProductFactory.class);
 	@Resource
 	DataSource dataSource;
 	@Value("${scan.entity_path}")
 	private String entity_path;
 	
 	@Override
-	@Bean(name = "managerFactory")
+	@Bean(name = "entityManagerFactory")
 	//@Primary
 	public Object product() {
-		// TODO Auto-generated method stub
+		logger.info("\n###############################################\n");
 		Object obj  = null;
 		try {
 		switch (this.getDatabaseConfig().getFactoryType()) {
@@ -59,11 +61,13 @@ AbstractProductFactory<Object> {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		logger.info("\n###############################################\n");
 		return obj;
 	}
 	
 	/**
 	 * jpa 实体管理类
+	 * 自定义一个名字为entityManagerFactory的EntityManagerFactory后，spring boot 会关闭它本身的EntityManagerFactory
 	 * 
 	 * @return
 	 * @throws PropertyVetoException
@@ -71,8 +75,8 @@ AbstractProductFactory<Object> {
 	private EntityManagerFactory jpaEntityManagerFactory()
 			throws PropertyVetoException {
 		HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
-		vendorAdapter.setGenerateDdl(true);
-		vendorAdapter.setShowSql(true);
+		vendorAdapter.setGenerateDdl(false);
+		//vendorAdapter.setShowSql(true);
 		LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
 		entityManagerFactoryBean.setJpaVendorAdapter(vendorAdapter);
 		entityManagerFactoryBean.setDataSource(dataSource);
@@ -83,6 +87,7 @@ AbstractProductFactory<Object> {
 		entityManagerFactoryBean.setJpaProperties(getHibernteProperties());
 		EntityManagerFactory entityManagerFactory = entityManagerFactoryBean
 				.getObject();
+		logger.info("\n####################### 配置实体管理类工厂EntityManagerFactory ########################\n");
 		return entityManagerFactory;
 	}
 
@@ -96,6 +101,8 @@ AbstractProductFactory<Object> {
 		sessionFactoryBean.setPackagesToScan(entity_path);
 		sessionFactoryBean.setHibernateProperties(getHibernteProperties());
 		SessionFactory sessionFactory = sessionFactoryBean.getObject();
+		logger.info("\n####################### 配置实体Hibernate SessionFactory ########################\n");
+
 		return sessionFactory;
 
 	}
@@ -106,7 +113,6 @@ AbstractProductFactory<Object> {
 			ClassPathResource classPathResource = new ClassPathResource("hibernate.properties");
 			InputStream inputStream = classPathResource.getInputStream();
 			properties.load(inputStream);
-		
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -10,6 +10,7 @@ public class ApplicationTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		SpringApplication springApplication = new SpringApplication(ApplicationTest.class);
+		//springApplication.setAdditionalProfiles("classpath:application-test.prop");
 		springApplication.setWebEnvironment(true);
 		springApplication.run(args);
 //    SpringApplication.run(Application.class, args);

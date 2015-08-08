@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 import org.apache.commons.dbcp.BasicDataSource;
+import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -18,15 +19,20 @@ import com.wl.mall.module.common.config.factory.AbstractProductFactory;
 
 @Configuration
 public class DataSourceProductFactory extends AbstractProductFactory<DataSource> {
-
+	 private static final Logger logger = Logger  
+	            .getLogger(DataSourceProductFactory.class); 
 	@Resource
 	private ConnectionProperties connectionProperties;
 	
+	/**
+	 * 定义了DataSource类型的@Bean 会覆盖默认设置
+	 * 
+	 */
 	@Override
 	@Bean(name = "dataSource")
-	@Primary
+	//@Primary
 	public DataSource product() {
-		// TODO Auto-generated method stub
+		logger.info("\n###############################################\n");
 		DataSource dataSource = null;
 		try {
 			switch (this.getDatabaseConfig().getDatasourceType()) {
@@ -49,9 +55,18 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		logger.info("\n####################数据库url: "+ connectionProperties.getUrl() +"###########################\n");
+
+		logger.info("\n###############################################\n");
 		return dataSource;
 	}
 
+	/**
+	 * c3po 
+	 * 
+	 * @return
+	 * @throws PropertyVetoException
+	 */
 	private DataSource comboPooledDataSource() throws PropertyVetoException {
 
 		ComboPooledDataSource dataSource = new ComboPooledDataSource();
@@ -68,7 +83,7 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 		dataSource.setMaxIdleTime(connectionProperties.getMaxIdleTime());
 		dataSource.setIdleConnectionTestPeriod(connectionProperties
 				.getIdleConnectionTextPeriod());
-
+		logger.info("\n####################### 配置c3po数据源 ########################\n");
 		return dataSource;
 	}
 
@@ -89,6 +104,7 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 				.getMaxIdleTime());
 		dataSource.setMaxOpenPreparedStatements(connectionProperties
 				.getMaxStatements());
+		logger.info("\n####################### 配置druidDataSource数据源 ########################\n");
 
 		return dataSource;
 	}
@@ -105,6 +121,7 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 		dataSource.setUsername(connectionProperties.getUserName());
 		dataSource.setPassword(connectionProperties.getPassword());
 		dataSource.setDriverClassName(connectionProperties.getDriverClassName());
+		logger.info("\n####################### 配置spring jdbc 数据源########################\n");
 
 		return dataSource;
 	}
@@ -125,6 +142,8 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 		dataSource.setMaxActive(connectionProperties.getMaxPoolSize());
 		dataSource.setMaxOpenPreparedStatements(connectionProperties
 				.getMaxStatements());
+		logger.info("\n####################### 配置JDBC apache数据源 ########################\n");
+
 		return dataSource;
 	}
 

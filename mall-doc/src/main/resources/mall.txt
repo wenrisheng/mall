@@ -91,5 +91,7 @@ service层测试继承BaseRepositoryTest
 view层测试BaseViewTest
 controller层测试暂时没用到
 
+lsof -i -n -P|grep 8080
+
 
 

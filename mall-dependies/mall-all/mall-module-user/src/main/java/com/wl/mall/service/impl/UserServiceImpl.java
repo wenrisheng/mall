@@ -11,7 +11,7 @@ import com.wl.mall.repository.UserRepository;
 import com.wl.mall.service.UserService;
 
 
-@Service("userService")
+@Service("userServiceImpl")
 public class UserServiceImpl implements UserService {
 	@Resource
 	private UserRepository userRepository;
