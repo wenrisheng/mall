@@ -2,8 +2,6 @@ package com.wl.mall.service.impl;
 
 import javax.annotation.Resource;
 
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.wl.mall.entity.User;
@@ -22,12 +20,12 @@ public class UserServiceImpl implements UserService {
 		userRepository.save(user);
 	}
 
-	@Override
-	public UserDetails loadUserByUsername(String username)
-			throws UsernameNotFoundException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+//	@Override
+//	public UserDetails loadUserByUsername(String username)
+//			throws UsernameNotFoundException {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
 
 
 

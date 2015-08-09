@@ -9,7 +9,6 @@ import org.apache.commons.dbcp.BasicDataSource;
 import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import com.alibaba.druid.pool.DruidDataSource;
@@ -115,7 +114,6 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 	 * @return
 	 */
 	private DataSource driverManagerDataSource() {
-
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setUrl(connectionProperties.getUrl());
 		dataSource.setUsername(connectionProperties.getUserName());

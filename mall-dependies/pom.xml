@@ -94,14 +94,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
 		<!-- ... spring security ... -->
-		<dependency>
+<!--   		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
-		</dependency>
+		</dependency>  --> 
 		<!-- 生产环境运维支持 -->
 <!-- <dependency>
 	<groupId>org.springframework.boot</groupId>
