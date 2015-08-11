@@ -14,4 +14,8 @@ public class MainController {
 	String toLoginPage() {
 		return "login";
 	}
+	@RequestMapping("/logout")
+	String logout() {
+	  return "redirect:/index";
+	}
 }
