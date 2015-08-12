@@ -4,9 +4,9 @@ import java.beans.PropertyVetoException;
 
 import javax.annotation.Resource;
 import javax.persistence.EntityManagerFactory;
-
-import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -21,8 +21,7 @@ import com.wl.mall.module.common.config.factory.AbstractProductFactory;
 //启用注解式事务管理 <tx:annotation-driven />
 @EnableTransactionManagement
 public class TransactionManagerProductFactory extends AbstractProductFactory<PlatformTransactionManager> {
-	private static final Logger logger = Logger  
-            .getLogger(TransactionManagerProductFactory.class);
+	private static final Logger logger = LoggerFactory.getLogger(TransactionManagerProductFactory.class);
 	@Resource(name = "entityManagerFactory")
 	private Object managerFactory;
 	
@@ -30,7 +29,6 @@ public class TransactionManagerProductFactory extends AbstractProductFactory<Pla
 	@Bean(name = "transactionManager")
 	@Primary
 	public PlatformTransactionManager product() {
-		logger.info("\n###############################################\n");
 		PlatformTransactionManager transactionManager = null;
 		try {
 		switch (this.getDatabaseConfig().getTransactionType()) {
@@ -51,7 +49,6 @@ public class TransactionManagerProductFactory extends AbstractProductFactory<Pla
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		logger.info("\n###############################################\n");
 		return transactionManager;
 	}
 

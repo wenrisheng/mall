@@ -6,7 +6,8 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 import org.apache.commons.dbcp.BasicDataSource;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -16,10 +17,10 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 import com.wl.mall.module.common.config.ConnectionProperties;
 import com.wl.mall.module.common.config.factory.AbstractProductFactory;
 
+
 @Configuration
 public class DataSourceProductFactory extends AbstractProductFactory<DataSource> {
-	 private static final Logger logger = Logger  
-	            .getLogger(DataSourceProductFactory.class); 
+	 private static final Logger logger = LoggerFactory.getLogger(DataSourceProductFactory.class); 
 	@Resource
 	private ConnectionProperties connectionProperties;
 	
@@ -31,7 +32,6 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 	@Bean(name = "dataSource")
 	//@Primary
 	public DataSource product() {
-		logger.info("\n###############################################\n");
 		DataSource dataSource = null;
 		try {
 			switch (this.getDatabaseConfig().getDatasourceType()) {
@@ -55,8 +55,6 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 			e.printStackTrace();
 		}
 		logger.info("\n####################数据库url: "+ connectionProperties.getUrl() +"###########################\n");
-
-		logger.info("\n###############################################\n");
 		return dataSource;
 	}
 

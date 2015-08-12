@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
 	public void saveUser(User user) {
 		// TODO Auto-generated method stub
 		userRepository.save(user);
-		logger.info("##########logger debug saveUser################");
+		logger.info("\n##########logger debug saveUser################\n");
 	}
 
 //	@Override

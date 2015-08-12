@@ -9,9 +9,10 @@ import javax.annotation.Resource;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
-import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.hibernate.jpa.HibernatePersistenceProvider;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,8 +29,7 @@ import com.wl.mall.module.common.config.factory.AbstractProductFactory;
 @PropertySource("classpath:scan_entity.properties")
 public class EntityManagerProductFactory extends
 AbstractProductFactory<Object> {
-	private static final Logger logger = Logger  
-            .getLogger(EntityManagerProductFactory.class);
+	private static final Logger logger = LoggerFactory.getLogger(EntityManagerProductFactory.class);
 	@Resource
 	DataSource dataSource;
 	@Value("${scan.entity_path}")
@@ -39,7 +39,6 @@ AbstractProductFactory<Object> {
 	@Bean(name = "entityManagerFactory")
 	//@Primary
 	public Object product() {
-		logger.info("\n###############################################\n");
 		Object obj  = null;
 		try {
 		switch (this.getDatabaseConfig().getFactoryType()) {
@@ -60,7 +59,6 @@ AbstractProductFactory<Object> {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		logger.info("\n###############################################\n");
 		return obj;
 	}
 	
@@ -75,7 +73,7 @@ AbstractProductFactory<Object> {
 			throws PropertyVetoException {
 		HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		vendorAdapter.setGenerateDdl(false);
-		vendorAdapter.setShowSql(true);
+		vendorAdapter.setShowSql(false);
 		LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
 		entityManagerFactoryBean.setJpaVendorAdapter(vendorAdapter);
 		entityManagerFactoryBean.setDataSource(dataSource);
