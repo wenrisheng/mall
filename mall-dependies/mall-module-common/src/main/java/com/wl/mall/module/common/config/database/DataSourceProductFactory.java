@@ -82,6 +82,7 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 		dataSource.setMaxIdleTime(connectionProperties.getMaxIdleTime());
 		dataSource.setIdleConnectionTestPeriod(connectionProperties
 				.getIdleConnectionTextPeriod());
+		
 		logger.info("\n####################### 配置c3po数据源 ########################\n");
 		return dataSource;
 	}
@@ -103,6 +104,7 @@ public class DataSourceProductFactory extends AbstractProductFactory<DataSource>
 				.getMaxIdleTime());
 		dataSource.setMaxOpenPreparedStatements(connectionProperties
 				.getMaxStatements());
+		
 		logger.info("\n####################### 配置druidDataSource数据源 ########################\n");
 
 		return dataSource;

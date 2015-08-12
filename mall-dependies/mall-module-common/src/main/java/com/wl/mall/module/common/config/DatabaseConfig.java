@@ -6,9 +6,13 @@ import org.springframework.stereotype.Component;
 @Component("databaseConfig")
 @ConfigurationProperties(locations = {"classpath:database_config.properties"}, prefix="database")
 public class DatabaseConfig {
+	// 数据库类型
 	private int databaseType;
+	// 数据源类型
     private int datasourceType;
+    // 实体工厂管理类型
     private int factoryType;
+    // 事务管理类型
     private int transactionType;
     
 	public int getDatabaseType() {
