@@ -8,24 +8,32 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.wl.mall.entity.User;
+import com.wl.mall.module.common.service.impl.BaseRepositoryServiceImpl;
 import com.wl.mall.repository.UserRepository;
 import com.wl.mall.service.UserService;
 
 
 @Service("userServiceImpl")
 @Transactional
-public class UserServiceImpl implements UserService {
-	  private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
+public class UserServiceImpl extends BaseRepositoryServiceImpl<User, Integer> implements UserService {
+	 
+
+	private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 	@Resource
 	private UserRepository userRepository;
+	
+	@Resource
+	public void setBaseRepository(UserRepository userRepository) {
+		super.setBaseRepository(userRepository);
+	}
 
 	@Override
 	public void saveUser(User user) {
 		// TODO Auto-generated method stub
 		userRepository.save(user);
-		logger.info("\n##########logger debug saveUser################\n");
 	}
 
+	
 //	@Override
 //	public UserDetails loadUserByUsername(String username)
 //			throws UsernameNotFoundException {

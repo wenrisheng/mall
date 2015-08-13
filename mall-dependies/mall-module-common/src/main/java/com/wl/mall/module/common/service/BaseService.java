@@ -3,30 +3,18 @@ package com.wl.mall.module.common.service;
 import java.io.Serializable;
 import java.util.List;
 
-public interface BaseService<T> {
-	public abstract Serializable save(Object o);
+public interface BaseService<T, ID extends Serializable> {
+	public abstract void save(T entity);
 
-	public abstract void delete(Object o);
+	public abstract void delete(ID id);
+	
+	public abstract void delete(T entity);
 
-	public abstract void update(Object o);
+	public abstract void get(ID id);
+	
+	public abstract void update(T entity);
 
-	public abstract void saveOrUpdate(Object o);
+	public abstract void saveOrUpdate(T entity);
 
-	public abstract List<T> find(String hql);
-
-	public abstract List<T> find(String hql, Object[] param);
-
-	public abstract List<T> find(String hql, List<?> param);
-
-	public abstract List<T> find(String hql, Object[] param, Integer page,
-			Integer rows);
-
-	public abstract List<T> find(String hql, List<Object> param, Integer page, Integer rows);
-
-	public abstract T get(Class<?> c, Serializable id);
-
-	public abstract T get(String hql, Object[] param);
-
-	public abstract T get(String hql, List<?> param);
 
 }

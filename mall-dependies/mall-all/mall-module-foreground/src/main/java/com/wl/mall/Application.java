@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @SpringBootApplication()
 //@EntityScan(basePackages = "com.wl.mall.domain")
-//@EnableJpaRepositories ( entityManagerFactoryRef = "managerFactory", transactionManagerRef = "transactionManager", basePackages = { "com.wl.mall.repository" })
+@EnableJpaRepositories ( entityManagerFactoryRef = "entityManagerFactory", transactionManagerRef = "transactionManager", basePackages = { "com.wl.mall.repository" }, repositoryFactoryBeanClass =  com.wl.mall.module.common.config.CustomRespositoryFactoryBean.class)
 
 //implements WebApplicationInitializer
 public class Application extends SpringBootServletInitializer{
