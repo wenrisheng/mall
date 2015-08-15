@@ -1,6 +1,6 @@
 package com.wl.mall.service;
 
-import com.wl.mall.entity.User;
+import com.wl.mall.orm.entity.User;
 
 public interface UserService {
 

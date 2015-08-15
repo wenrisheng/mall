@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.wl.mall.entity.User;
 import com.wl.mall.module.common.service.impl.BaseRepositoryServiceImpl;
+import com.wl.mall.orm.entity.User;
 import com.wl.mall.repository.UserRepository;
 import com.wl.mall.service.UserService;
 

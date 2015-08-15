@@ -21,6 +21,6 @@
   <module>mall-module-resources</module>
     	<module>mall-module-user</module>
   	<module>mall-module-foreground</module>
-  	
+  	<module>mall-module-background</module>
   </modules>
 </project>

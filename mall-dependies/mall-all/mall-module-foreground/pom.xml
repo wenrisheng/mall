@@ -8,7 +8,6 @@
   </parent>
   
   <artifactId>mall-module-foreground</artifactId>
-  <packaging>war</packaging>
   
   
   

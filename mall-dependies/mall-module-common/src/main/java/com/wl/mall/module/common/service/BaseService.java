@@ -9,6 +9,8 @@ public interface BaseService<T, ID extends Serializable> {
 	public abstract void delete(ID id);
 	
 	public abstract void delete(T entity);
+	
+	public abstract void deleteAll();
 
 	public abstract void get(ID id);
 	

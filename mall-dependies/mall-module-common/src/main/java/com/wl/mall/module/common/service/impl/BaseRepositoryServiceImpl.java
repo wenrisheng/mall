@@ -32,6 +32,11 @@ public class BaseRepositoryServiceImpl<T, ID extends Serializable> implements
 	}
 
 	@Override
+	public void deleteAll() {
+		baseRepository.deleteAll();
+	}
+	
+	@Override
 	public void delete(T entity) {
 		// TODO Auto-generated method stub
 		baseRepository.delete(entity);
@@ -46,13 +51,13 @@ public class BaseRepositoryServiceImpl<T, ID extends Serializable> implements
 	@Override
 	public void update(T entity) {
 		// TODO Auto-generated method stub
-		
+		this.save(entity);
 	}
 
 	@Override
 	public void saveOrUpdate(T entity) {
 		// TODO Auto-generated method stub
-		
+		this.save(entity);
 	}
 
 	

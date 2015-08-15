@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 //@ImportResource("classpath:application-service.xml")
 @SpringBootApplication
+@EnableJpaRepositories (repositoryFactoryBeanClass =  com.wl.mall.module.common.config.CustomRespositoryFactoryBean.class)
+
 //@EnableJpaRepositories ( entityManagerFactoryRef = "managerFactory", transactionManagerRef = "transactionManager", basePackages = { "com.wl.mall.repository" })
 
 public class ApplicationViewTest extends SpringBootServletInitializer{

@@ -1,4 +1,4 @@
-package com.wl.mall.entity;
+package com.wl.mall.orm.entity;
 
 // Generated 2015-8-4 21:30:39 by Hibernate Tools 4.3.1
 

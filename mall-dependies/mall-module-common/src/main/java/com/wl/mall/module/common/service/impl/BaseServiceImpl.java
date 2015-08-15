@@ -30,6 +30,11 @@ public class BaseServiceImpl<T, ID extends Serializable> implements BaseService<
 		// TODO Auto-generated method stub
 		
 	}
+	
+	@Override
+	public void deleteAll() {
+		
+	}
 
 	@Override
 	public void get(ID id) {
